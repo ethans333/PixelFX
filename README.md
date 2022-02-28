@@ -14,7 +14,14 @@ Add creative effects to your images.
 <img src="Images/dbz-after1.png" width="200" />
 </div>
 
-### Current effects include
-Pixel Sorting <br>
-Random Swap <br>
-Will add a ton more later!
+### Effects
+**Pixel Sorting:** 
+*nSwaps: # of pixel swaps per frame, w and h: width and height of swap region*
+<br>
+**Random Swap:**
+*thresh: luminance threshold*
+<br>
+
+*More to come...*
+
+Include ```n``` in certain parameters to change effect with frame: *thresh=```n*100```*
