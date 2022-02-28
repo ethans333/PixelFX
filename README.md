@@ -1,6 +1,6 @@
 # Pixel FX
 
-Add cool effects to your images.
+Add creative effects to your images.
 
 <div style="float: left;">
 <img src="Images/bateman-before.png" width="200" />
