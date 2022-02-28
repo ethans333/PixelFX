@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>👻</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+
+<body>
+    <p>@ethans33</p>
+
+    <div class="flex-container">
+
+        <div class="flex-child magenta">
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="flex-child green">
+            <select name="effects" id="effects">
+                <option>---</option>
+            </select>
+
+            <div id="effectParams"></div>
+
+            <br>
+            <button id="btnGenerate">Generate</button>
+        </div>
+    </div>
+
+    <div id="framesContainer"></div>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
