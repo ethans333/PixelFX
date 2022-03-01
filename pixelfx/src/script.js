@@ -4,7 +4,7 @@ let pxlData;
 
 let N_FRAMES = 5;
 
-const renderImage = (src = "./Images/test-image.jpg", maxW = 450) => {
+const renderImage = (src = "./Images/test-image.jpg") => {
     const image = new Image();
     image.src = src;
 
@@ -343,5 +343,13 @@ document.getElementById("btnGenerate").onclick = () => {
         }
     }});
 
-    renderImage();
+    const input = document.getElementById("imageFile"), fReader = new FileReader();
+
+    if (input.files.length > 0) {
+        fReader.readAsDataURL(input.files[0]);
+        fReader.onloadend = e => renderImage(e.target.result);
+    } else {
+        renderImage();
+    }
 }
+
