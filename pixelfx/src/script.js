@@ -9,7 +9,6 @@ const renderImage = (src = "./Images/test-image.jpg", maxW = 450) => {
     image.src = src;
 
     image.addEventListener("load", () => {
-        //canvas.width = maxW; canvas.height = maxW*image.height/image.width;
         canvas.width = image.width; canvas.height = image.height;
         ctx.drawImage(image, 0, 0);
 
